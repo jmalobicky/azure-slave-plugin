@@ -97,6 +97,10 @@
                             "id": "[resourceId('Microsoft.Network/networkInterfaces', concat(variables('vmName'), copyIndex(), 'NIC'))]"
                         }]
                 }
-            }
+            },
+      "tags": {
+        "business": "montage",
+        "environment": "dynamic-build-slave"
+      }
         }]
 }
